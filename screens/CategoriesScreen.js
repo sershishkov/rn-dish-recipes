@@ -1,19 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Button } from 'react-native';
 
 const CategoriesScreen = props => {
-  return (
-    <View style={styles.screen}>
-      <Text>The categories Screen!</Text>
-      <Button
-        title='Go to Meals'
-        onPress={() => {
-          props.navigation.navigate({ routeName: 'CategoryMeals' });
-          // props.navigation.replace('CategoryMeals');
-        }}
-      />
-    </View>
-  );
+  return <FlatList numColumns={2} />;
 };
 
 const styles = StyleSheet.create({
