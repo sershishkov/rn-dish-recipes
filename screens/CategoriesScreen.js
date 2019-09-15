@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
 const CategoriesScreen = props => {
-  console.log(props);
   return (
     <View style={styles.screen}>
       <Text>The categories Screen!</Text>
@@ -10,6 +9,7 @@ const CategoriesScreen = props => {
         title='Go to Meals'
         onPress={() => {
           props.navigation.navigate({ routeName: 'CategoryMeals' });
+          // props.navigation.replace('CategoryMeals');
         }}
       />
     </View>
