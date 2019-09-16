@@ -10,7 +10,6 @@ import {
 } from 'react-native';
 
 import { CATEGORIES } from '../data/dummy-data';
-import Colors from '../constants/Colors';
 
 const CategoriesScreen = props => {
   const renderFridItem = itemData => {
@@ -42,11 +41,7 @@ const CategoriesScreen = props => {
 };
 
 CategoriesScreen.navigationOptions = {
-  headerTitle: 'Meal Categories',
-  headerStyle: {
-    backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : 'white'
-  },
-  headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor
+  headerTitle: 'Meal Categories'
 };
 
 const styles = StyleSheet.create({
