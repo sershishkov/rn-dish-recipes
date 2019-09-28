@@ -15,7 +15,7 @@ const mealsReducer = (state = initialState, action) => {
       );
       if (existingIndex >= 0) {
         const updatedfavMeals = [...state.favoriteMeals];
-        updatedfavMeals.slice(existingIndex, 1);
+        updatedfavMeals.splice(existingIndex, 1);
         return { ...state, favoriteMeals: updatedfavMeals };
       } else {
         const meal = state.meals.find(meal => meal.id === action.mealId);
